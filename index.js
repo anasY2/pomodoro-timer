@@ -75,7 +75,7 @@ function process() {
           startTimer(breakInterval);
         }
         if (seconds == 0) {
-          seconds = 59;
+          seconds = 60;
           minutes--;
         }
         seconds--;

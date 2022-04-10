@@ -21,8 +21,14 @@ function process() {
       startInterval = setInterval(() => {
         let min = "" + minutes;
         let sec = "" + seconds;
+        if(seconds<10){
+          document.getElementById("seconds").innerText ="0"+sec;
+  
+          }else{
+
+            document.getElementById("seconds").innerText = sec;
+          }
         document.getElementById("minutes").innerText = min;
-        document.getElementById("seconds").innerText = sec;
         if (minutes == 0 && seconds == 2) {
           var audio = new Audio("audio/break.mp3");
           audio.play();
@@ -32,10 +38,7 @@ function process() {
           document.getElementById("sessions").innerText = "" + sessions;
           startBreak(startInterval);
         }
-        if(seconds<10){
-        document.getElementById("seconds").innerText ="0"+sec;
-
-        }
+        
         if (seconds == 0) {
           seconds = 60;
           minutes--;
@@ -52,16 +55,19 @@ function process() {
       breakInterval = setInterval(() => {
         let min = "" + minutes;
         let sec = "" + seconds;
+        if(seconds<10){
+          document.getElementById("seconds").innerText ="0"+sec;
+  
+          }else{
+
+            document.getElementById("seconds").innerText = sec;
+          }
         document.getElementById("minutes").innerText = min;
-        document.getElementById("seconds").innerText = sec;
         if (minutes == 0 && seconds == 2) {
           var audio = new Audio("audio/backtowork.mp3");
           audio.play();
         }
-        if(seconds<10){
-          document.getElementById("seconds").innerText ="0"+sec;
-  
-          }
+        
         if (minutes == 0 && seconds == 0) {
           click = 1;
       text.style.display="inline";

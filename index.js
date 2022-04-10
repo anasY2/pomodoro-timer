@@ -16,7 +16,7 @@ function process() {
       if (id) {
         clearInterval(id);
         minutes = 24;
-        seconds = 59;
+        seconds = 60;
       }
       startInterval = setInterval(() => {
         let min = "" + minutes;
@@ -31,6 +31,10 @@ function process() {
           sessions++;
           document.getElementById("sessions").innerText = "" + sessions;
           startBreak(startInterval);
+        }
+        if(seconds<10){
+        document.getElementById("seconds").innerText ="0"+sec;
+
         }
         if (seconds == 0) {
           seconds = 60;
@@ -54,6 +58,10 @@ function process() {
           var audio = new Audio("audio/backtowork.mp3");
           audio.play();
         }
+        if(seconds<10){
+          document.getElementById("seconds").innerText ="0"+sec;
+  
+          }
         if (minutes == 0 && seconds == 0) {
           click = 1;
       text.style.display="inline";

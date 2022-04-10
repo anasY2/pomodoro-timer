@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+}
+body {
+   
+   
+    height: 100%;
+    margin: 0;
+    padding: 4vh;
+   
+    background: #2A3439;
+    color: #FFFFFF;
+    /* display: grid;
+    place-items: center; */
+}
+#header_session{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+   text-align: center;
+}
+#session_box{
+    font-family: 'Montserrat', sans-serif;
+
+    position: absolute;
+    top: 0%;
+}
+#timer_display{
+    font-family: 'Nunito', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+#timer_button{
+    text-align: center;
+}
+#process{
+    background-color: #FFFFFF;
+    color: #2a3439;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 0.25em 1em;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+#resetButton{
+    background-color: #FFFFFF;
+    color: #2a3439;
+    border: 0;
+    width: 100px;
+    font-size: 1.5rem;
+    padding: 0.25em 1em;
+    border-radius: 5px;
+}
+#process,#resetButton:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/icon/icons8-clock-64.png">
+    <title>Pomodoro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div id="header_session">
+
+          <h1 id="heading">Pomodoro Timer</h1>
+        </div>
+        <h3 id="session_box">Sessions : <span id="sessions">0</span></h3>
+      
+    <div id="timer_display">
+      <h1 id="timer">
+        <span id="minutes">25</span><span>:</span><span id="seconds">00</span>
+      </h1>
+    </div>
+    <div id="timer_button">
+      <button id="resetButton" onclick="resetTimer()">Reset</button>
+
+      <button id="process" onclick="process()">Start</button>
+    </div>
+   
+  </body>
+  <script src="/index.js"></script>
+</html>
